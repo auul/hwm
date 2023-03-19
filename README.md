@@ -5,13 +5,10 @@ A minimalistic tiling/stacking hybrid window manager for X11.
 Hum? Hume? Whom.
 
 ## Building and Installing
-To build hwm, simply navigate to the root directory where you would like to store the repository, and enter the following commands:
+To build hwm, simply navigate to the directory where you have cloned the repository, and enter the following commands:
 
 ```
-git clone https://github.com/auul/hwm
-cd hwm
-make
-sudo make install
+make && sudo make install
 ```
 
 This will install hwm by default into /usr/bin/, where it can be accessed under your system's PATH.
