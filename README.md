@@ -24,12 +24,10 @@ Currently hwm does not contain any facility for launching programs; they must al
 
 ## Using
 
-By default, hwm displays all windows in tiling mode. Each window, in order of creation, is allocated half of the remaining screen real estate, and the final tile occupies the rest of the available space. The aspect ratio of each tile is determined based on the ratio of the available space; that is, the larger dimension (width or height) is split in half, and the window occupies the full remaining extent of the other dimension.
+By default, hwm treats all windows as part of a tiling stack. The top of this stack is given half of the screen real estate, and each successive window is given half of the remaining space, until only one window is left, which is given the remaining empty screen space.
 
-`Alt+LeftClick`: Dragging while pressing this combo will switch a tiled window to stacking mode, or move a window already in stacking mode.
+`Alt+Return`: moves a window to the top of the tiling stack, making it the primary window and pushing all other tiled windows down. If the focused window is in stacking mode, this is the way to return it to tiling mode.
 
-`Alt+Return`: Returns the focused window to tiling mode and retiles the screen.
+`Alt+LeftClick`: dragging a window with this switches that window's mode to stacking, and moves it around the screen.
 
-`Alt+PageUp`: Cycles a tiled window backwards through tile positions.
-
-`Alt+PageDown`: Cycles a tiled window forwards through tile positions.
+`Alt+RightClick`: dragging a stacking window with this resizes that window. Currently, this does nothing in tiling mode.
